@@ -18,6 +18,11 @@ factorial() {
 read -p "enter n: " n
 read -p "enter x: " x
 
+if [ $n -lt $x ]; then
+	echo "n must be greater"
+	exit
+fi
+
 n_fact=$( factorial $n )
 n_minus_x_fact=$( factorial $((n-x)) )
 
