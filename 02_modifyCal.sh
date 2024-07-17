@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for month in "$@"
+for month in "$1"
 do
 	cal -m "$month"
 done
